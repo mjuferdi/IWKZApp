@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08040ABB20ED3F1700911BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08040ABA20ED3F1700911BEE /* Assets.xcassets */; };
+		08996F1020ED4B6500A9468B /* JadwalSholatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08996F0F20ED4B6500A9468B /* JadwalSholatViewController.swift */; };
+		08996F1220ED4BAE00A9468B /* JadwalSholatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08996F1120ED4BAE00A9468B /* JadwalSholatService.swift */; };
+		08C7C0DD20EA7AE600586EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7C0DC20EA7AE600586EF8 /* AppDelegate.swift */; };
+		08C7C0DF20EA7AE600586EF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7C0DE20EA7AE600586EF8 /* ViewController.swift */; };
+		08C7C0E220EA7AE600586EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C7C0E020EA7AE600586EF8 /* Main.storyboard */; };
+		08C7C0E720EA7AE800586EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C7C0E520EA7AE800586EF8 /* LaunchScreen.storyboard */; };
+		12C0CA5E382D983FDFE6A111 /* Pods_IWKZApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0659E71CB7D0696446BD1133 /* Pods-IWKZApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWKZApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IWKZApp/Pods-IWKZApp.release.xcconfig"; sourceTree = "<group>"; };
+		08040ABA20ED3F1700911BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08996F0F20ED4B6500A9468B /* JadwalSholatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JadwalSholatViewController.swift; sourceTree = "<group>"; };
+		08996F1120ED4BAE00A9468B /* JadwalSholatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JadwalSholatService.swift; sourceTree = "<group>"; };
+		08C7C0D920EA7AE600586EF8 /* IWKZApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IWKZApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C7C0DC20EA7AE600586EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08C7C0DE20EA7AE600586EF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08C7C0E120EA7AE600586EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08C7C0E620EA7AE800586EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08C7C0E820EA7AE800586EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IWKZApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FDBEC31EA63CB0380D40B6 /* Pods-IWKZApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWKZApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IWKZApp/Pods-IWKZApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C7C0D620EA7AE600586EF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C0CA5E382D983FDFE6A111 /* Pods_IWKZApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08996F0E20ED4B4600A9468B /* Jadwal Sholat */ = {
+			isa = PBXGroup;
+			children = (
+				08996F0F20ED4B6500A9468B /* JadwalSholatViewController.swift */,
+				08996F1120ED4BAE00A9468B /* JadwalSholatService.swift */,
+			);
+			path = "Jadwal Sholat";
+			sourceTree = "<group>";
+		};
+		08C7C0D020EA7AE600586EF8 = {
+			isa = PBXGroup;
+			children = (
+				08C7C0DB20EA7AE600586EF8 /* IWKZApp */,
+				08C7C0DA20EA7AE600586EF8 /* Products */,
+				54802C84D89D3C7AC124A8F8 /* Pods */,
+				8F2B088D992F72012FE53350 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08C7C0DA20EA7AE600586EF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C7C0D920EA7AE600586EF8 /* IWKZApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C7C0DB20EA7AE600586EF8 /* IWKZApp */ = {
+			isa = PBXGroup;
+			children = (
+				08996F0E20ED4B4600A9468B /* Jadwal Sholat */,
+				08C7C0DC20EA7AE600586EF8 /* AppDelegate.swift */,
+				08C7C0DE20EA7AE600586EF8 /* ViewController.swift */,
+				08C7C0E020EA7AE600586EF8 /* Main.storyboard */,
+				08040ABA20ED3F1700911BEE /* Assets.xcassets */,
+				08C7C0E520EA7AE800586EF8 /* LaunchScreen.storyboard */,
+				08C7C0E820EA7AE800586EF8 /* Info.plist */,
+			);
+			path = IWKZApp;
+			sourceTree = "<group>";
+		};
+		54802C84D89D3C7AC124A8F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3FDBEC31EA63CB0380D40B6 /* Pods-IWKZApp.debug.xcconfig */,
+				0659E71CB7D0696446BD1133 /* Pods-IWKZApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F2B088D992F72012FE53350 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08C7C0D820EA7AE600586EF8 /* IWKZApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C7C0EB20EA7AE800586EF8 /* Build configuration list for PBXNativeTarget "IWKZApp" */;
+			buildPhases = (
+				B58BCDB0C00040EE579D4687 /* [CP] Check Pods Manifest.lock */,
+				08C7C0D520EA7AE600586EF8 /* Sources */,
+				08C7C0D620EA7AE600586EF8 /* Frameworks */,
+				08C7C0D720EA7AE600586EF8 /* Resources */,
+				AFDA8FD3E05EA81FC123674B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IWKZApp;
+			productName = IWKZApp;
+			productReference = 08C7C0D920EA7AE600586EF8 /* IWKZApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08C7C0D120EA7AE600586EF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Mario Muhammad";
+				TargetAttributes = {
+					08C7C0D820EA7AE600586EF8 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 08C7C0D420EA7AE600586EF8 /* Build configuration list for PBXProject "IWKZApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08C7C0D020EA7AE600586EF8;
+			productRefGroup = 08C7C0DA20EA7AE600586EF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08C7C0D820EA7AE600586EF8 /* IWKZApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08C7C0D720EA7AE600586EF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C7C0E720EA7AE800586EF8 /* LaunchScreen.storyboard in Resources */,
+				08040ABB20ED3F1700911BEE /* Assets.xcassets in Resources */,
+				08C7C0E220EA7AE600586EF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFDA8FD3E05EA81FC123674B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IWKZApp/Pods-IWKZApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IWKZApp/Pods-IWKZApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58BCDB0C00040EE579D4687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IWKZApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08C7C0D520EA7AE600586EF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C7C0DF20EA7AE600586EF8 /* ViewController.swift in Sources */,
+				08C7C0DD20EA7AE600586EF8 /* AppDelegate.swift in Sources */,
+				08996F1020ED4B6500A9468B /* JadwalSholatViewController.swift in Sources */,
+				08996F1220ED4BAE00A9468B /* JadwalSholatService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		08C7C0E020EA7AE600586EF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C7C0E120EA7AE600586EF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08C7C0E520EA7AE800586EF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C7C0E620EA7AE800586EF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08C7C0E920EA7AE800586EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08C7C0EA20EA7AE800586EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08C7C0EC20EA7AE800586EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3FDBEC31EA63CB0380D40B6 /* Pods-IWKZApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZDFPF5YK4;
+				INFOPLIST_FILE = IWKZApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mar.IWKZApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08C7C0ED20EA7AE800586EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0659E71CB7D0696446BD1133 /* Pods-IWKZApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZDFPF5YK4;
+				INFOPLIST_FILE = IWKZApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mar.IWKZApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08C7C0D420EA7AE600586EF8 /* Build configuration list for PBXProject "IWKZApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C7C0E920EA7AE800586EF8 /* Debug */,
+				08C7C0EA20EA7AE800586EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C7C0EB20EA7AE800586EF8 /* Build configuration list for PBXNativeTarget "IWKZApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C7C0EC20EA7AE800586EF8 /* Debug */,
+				08C7C0ED20EA7AE800586EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08C7C0D120EA7AE600586EF8 /* Project object */;
+}
