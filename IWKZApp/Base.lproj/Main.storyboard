@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="2036" y="134"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Masjid Table View Controller-->
         <scene sceneID="xn3-3f-Dvd">
             <objects>
-                <tableViewController id="J5V-0V-Qwu" sceneMemberID="viewController">
+                <tableViewController id="J5V-0V-Qwu" customClass="MasjidTableViewController" customModule="IWKZApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Df-Wy-p94">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

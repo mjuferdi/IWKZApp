@@ -6,9 +6,11 @@
 //  Copyright © 2018 Mario Muhammad. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreLocation
 
-class Masjid  {
+class Masjid {
+   
     
+   
 }
