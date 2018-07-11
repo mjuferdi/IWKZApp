@@ -14,6 +14,7 @@
 		08C7C0DF20EA7AE600586EF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7C0DE20EA7AE600586EF8 /* ViewController.swift */; };
 		08C7C0E220EA7AE600586EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C7C0E020EA7AE600586EF8 /* Main.storyboard */; };
 		08C7C0E720EA7AE800586EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C7C0E520EA7AE800586EF8 /* LaunchScreen.storyboard */; };
+		08FD3B2C20F67AB8008E2A3F /* MasjidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FD3B2B20F67AB8008E2A3F /* MasjidService.swift */; };
 		12C0CA5E382D983FDFE6A111 /* Pods_IWKZApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		08C7C0E120EA7AE600586EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08C7C0E620EA7AE800586EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08C7C0E820EA7AE800586EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08FD3B2B20F67AB8008E2A3F /* MasjidService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidService.swift; sourceTree = "<group>"; };
 		B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IWKZApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FDBEC31EA63CB0380D40B6 /* Pods-IWKZApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWKZApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IWKZApp/Pods-IWKZApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 		08C7C0DB20EA7AE600586EF8 /* IWKZApp */ = {
 			isa = PBXGroup;
 			children = (
+				08FD3B2A20F67AA4008E2A3F /* Masjid */,
 				08996F0E20ED4B4600A9468B /* Jadwal Sholat */,
 				08C7C0DC20EA7AE600586EF8 /* AppDelegate.swift */,
 				08C7C0DE20EA7AE600586EF8 /* ViewController.swift */,
@@ -83,6 +86,14 @@
 				08C7C0E820EA7AE800586EF8 /* Info.plist */,
 			);
 			path = IWKZApp;
+			sourceTree = "<group>";
+		};
+		08FD3B2A20F67AA4008E2A3F /* Masjid */ = {
+			isa = PBXGroup;
+			children = (
+				08FD3B2B20F67AB8008E2A3F /* MasjidService.swift */,
+			);
+			path = Masjid;
 			sourceTree = "<group>";
 		};
 		54802C84D89D3C7AC124A8F8 /* Pods */ = {
@@ -217,6 +228,7 @@
 				08C7C0DF20EA7AE600586EF8 /* ViewController.swift in Sources */,
 				08C7C0DD20EA7AE600586EF8 /* AppDelegate.swift in Sources */,
 				08996F1020ED4B6500A9468B /* JadwalSholatViewController.swift in Sources */,
+				08FD3B2C20F67AB8008E2A3F /* MasjidService.swift in Sources */,
 				08996F1220ED4BAE00A9468B /* JadwalSholatService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

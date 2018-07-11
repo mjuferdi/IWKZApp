@@ -9,7 +9,6 @@
 import UIKit
 
 class JadwalSholatViewController: UIViewController {
-
     
     @IBOutlet weak var tanggalLabel: UILabel!
     @IBOutlet weak var subuhLabel: UILabel!
@@ -33,8 +32,9 @@ class JadwalSholatViewController: UIViewController {
             self.magribLabel.text = self.jadwal.magrib
             self.isyaLabel.text = self.jadwal.isya
         }
-       
-
-        // Do any additional setup after loading the view.
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
     }
 }
