@@ -7,6 +7,6 @@ target 'IWKZApp' do
 
   # Pods for IWKZApp
 
-pod 'Alamofire', '~> 4.7'
+pod 'Alamofire'
 
 end

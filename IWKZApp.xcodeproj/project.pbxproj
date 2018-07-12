@@ -78,8 +78,8 @@
 		08C7C0DB20EA7AE600586EF8 /* IWKZApp */ = {
 			isa = PBXGroup;
 			children = (
-				08FD3B2A20F67AA4008E2A3F /* Masjid */,
 				08996F0E20ED4B4600A9468B /* Jadwal Sholat */,
+				08FD3B2A20F67AA4008E2A3F /* Masjid */,
 				08C7C0DC20EA7AE600586EF8 /* AppDelegate.swift */,
 				08C7C0DE20EA7AE600586EF8 /* ViewController.swift */,
 				08C7C0E020EA7AE600586EF8 /* Main.storyboard */,
