@@ -8,35 +8,37 @@
 
 import UIKit
 import CoreLocation
+import SVProgressHUD
 
-class MasjidTableViewController: UITableViewController, CLLocationManagerDelegate {
+class MasjidTableViewController: UITableViewController, CLLocationManagerDelegate, UpdateDelegate {
     
     let locationManager = CLLocationManager()
     var latitude = ""
     var longitude = ""
     var masjid = Masjid()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        masjid.delegate = self
         // Declare instance variables here
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
+        navigationController?.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        tableView.separatorStyle = .none
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
-        for i in self.masjid.masjids {
-            print(i.name)
-            
-        }
+    // Function to used by protocol for update table 
+    func didUpdate(sender: Masjid) {
+        self.tableView.reloadData()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        SVProgressHUD.show()
+        SVProgressHUD.setFadeInAnimationDuration(1.0)
         let location = locations[locations.count - 1]
         if location.horizontalAccuracy > 0 {
             locationManager.stopUpdatingLocation()
@@ -45,16 +47,12 @@ class MasjidTableViewController: UITableViewController, CLLocationManagerDelegat
             latitude = String(location.coordinate.latitude)
             longitude = String(location.coordinate.longitude)
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            let deadline = DispatchTime.now() + .seconds(3)
+            DispatchQueue.main.asyncAfter(deadline: deadline) {
                 self.masjid.getMasjid(lat: self.latitude, lon: self.longitude)
-                print("lat: \(self.latitude) lon: \(self.longitude)")
-                self.tableView.reloadData()
-                
             }
         }
     }
-    
-    func getInfoMasjid() {}
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         let alert = UIAlertController(title: "Not Found", message: "Your location is not found", preferredStyle: .alert)

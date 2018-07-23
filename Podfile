@@ -8,5 +8,6 @@ target 'IWKZApp' do
   # Pods for IWKZApp
 
 pod 'Alamofire'
+pod 'SVProgressHUD'
 
 end

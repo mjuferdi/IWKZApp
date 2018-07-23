@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         masjidButton.layer.cornerRadius = 5.0
         restaurantButton.layer.cornerRadius = 5.0
         supermarketButton.layer.cornerRadius = 5.0
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
 
     }
 

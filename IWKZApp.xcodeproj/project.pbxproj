@@ -51,8 +51,8 @@
 		08996F0E20ED4B4600A9468B /* Jadwal Sholat */ = {
 			isa = PBXGroup;
 			children = (
-				08996F0F20ED4B6500A9468B /* JadwalSholatViewController.swift */,
 				08996F1120ED4BAE00A9468B /* JadwalSholatService.swift */,
+				08996F0F20ED4B6500A9468B /* JadwalSholatViewController.swift */,
 			);
 			path = "Jadwal Sholat";
 			sourceTree = "<group>";
@@ -193,10 +193,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IWKZApp/Pods-IWKZApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

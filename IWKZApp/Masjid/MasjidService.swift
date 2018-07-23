@@ -8,8 +8,16 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
+
+// Declare protocol
+protocol UpdateDelegate {
+    func didUpdate(sender: Masjid)
+}
 
 class Masjid {
+    
+    var delegate: UpdateDelegate?
     
     var masjids = [InfoMasjid]()
     
@@ -29,7 +37,10 @@ class Masjid {
                     self.masjids.append(infos)
                 }
                 
-                print(self.masjids.count)
+                self.delegate?.didUpdate(sender: self)
+                SVProgressHUD.dismiss()
+
+                //print(self.masjids.count)
             }
             
         }
