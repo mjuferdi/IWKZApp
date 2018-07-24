@@ -95,6 +95,8 @@ class MasjidTableViewController: UITableViewController, CLLocationManagerDelegat
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 dvc.nameData = masjid.masjids[indexPath.row].name as String
                 dvc.addressData = masjid.masjids[indexPath.row].address as String
+                dvc.latitude = masjid.masjids[indexPath.row].coordinate[0] as Double
+                dvc.longitude = masjid.masjids[indexPath.row].coordinate[1] as Double
             }
         }
     }

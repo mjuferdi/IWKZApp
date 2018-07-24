@@ -13,6 +13,8 @@ class DetailMasjidViewController: UIViewController {
     
     var nameData: String!
     var addressData: String!
+    var latitude = 0.0
+    var longitude = 0.0
 
     @IBOutlet weak var detailName: UILabel!
     @IBOutlet weak var detailAddress: UILabel!
@@ -25,6 +27,18 @@ class DetailMasjidViewController: UIViewController {
         
         detailName.text = nameData
         detailAddress.text = addressData
+        
+        let span = MKCoordinateSpanMake(0.005, 0.005)
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2DMake(latitude, longitude), span: span)
+        detailMapView.setRegion(region, animated: true)
+        
+        let pinLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let pinAnn = MKPointAnnotation()
+        pinAnn.coordinate = pinLocation
+        pinAnn.title = detailName.text
+        pinAnn.subtitle = detailAddress.text
+        
+        self.detailMapView.addAnnotation(pinAnn)
         
         directionButton.layer.cornerRadius = 5
 

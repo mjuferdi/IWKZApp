@@ -48,8 +48,6 @@ class Masjid {
                 
                 self.delegate?.didUpdate(sender: self)
                 SVProgressHUD.dismiss()
-                print(self.masjids[0].coordinate)
-                print(self.masjids[0].name)
             }
             
         }
