@@ -171,7 +171,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="gci-jK-UNL"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.21 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d1z-2o-JPI">
@@ -214,6 +214,7 @@
                                     <outlet property="distanceLabel" destination="d1z-2o-JPI" id="1Yu-ft-xCN"/>
                                     <outlet property="nameLabel" destination="zs0-EE-Y1R" id="CdU-GK-YN5"/>
                                     <outlet property="previewImageView" destination="4Ah-s2-lcu" id="fW3-m5-ALo"/>
+                                    <segue destination="dzE-qC-91s" kind="show" identifier="showMasjid" id="5CR-4U-YAI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -226,7 +227,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kM-Ug-FwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1983" y="956"/>
+            <point key="canvasLocation" x="1982.5" y="955.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fNv-cm-Ffw">
@@ -255,7 +256,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qg-6j-Hb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3913" y="954"/>
+            <point key="canvasLocation" x="4852" y="956"/>
         </scene>
         <!--Jadwal Sholat-->
         <scene sceneID="1Iu-xi-5Nn">
@@ -496,7 +497,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="OZ8-sW-kUi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -536,6 +541,79 @@
             </objects>
             <point key="canvasLocation" x="1983.2" y="1728.4857571214395"/>
         </scene>
+        <!--Info Masjid-->
+        <scene sceneID="fgF-6A-mxT">
+            <objects>
+                <viewController title="Info Masjid" id="dzE-qC-91s" customClass="DetailMasjidViewController" customModule="IWKZApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7pZ-xy-EE2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X9n-Ce-Oq0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="290"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islamisches Kultur- und Erziehungszentrum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vuh-Wj-Kl7">
+                                <rect key="frame" x="16" y="340" width="343" height="51.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51.5" id="LT8-Rf-pgC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScZ-nT-yTK">
+                                <rect key="frame" x="16" y="459" width="343" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lR1-82-ICg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Direction">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionTapped:" destination="dzE-qC-91s" eventType="touchUpInside" id="rWn-55-EFu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gitschiner Str. 17, 10969 Berlin, Germany" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0B9-rb-cyV">
+                                <rect key="frame" x="16" y="411" width="343" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="wSe-xh-xsv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ScZ-nT-yTK" firstAttribute="top" secondItem="0B9-rb-cyV" secondAttribute="bottom" constant="29" id="2cY-EZ-pjS"/>
+                            <constraint firstItem="M9b-uU-POf" firstAttribute="trailing" secondItem="Vuh-Wj-Kl7" secondAttribute="trailing" constant="16" id="3AN-ho-jAL"/>
+                            <constraint firstItem="Vuh-Wj-Kl7" firstAttribute="leading" secondItem="M9b-uU-POf" secondAttribute="leading" constant="16" id="DZH-YN-8S2"/>
+                            <constraint firstItem="X9n-Ce-Oq0" firstAttribute="leading" secondItem="M9b-uU-POf" secondAttribute="leading" id="EAK-yH-jm5"/>
+                            <constraint firstItem="M9b-uU-POf" firstAttribute="bottom" secondItem="ScZ-nT-yTK" secondAttribute="bottom" constant="50" id="LDT-hW-US2"/>
+                            <constraint firstItem="0B9-rb-cyV" firstAttribute="leading" secondItem="M9b-uU-POf" secondAttribute="leading" constant="16" id="NQU-YC-dmi"/>
+                            <constraint firstItem="X9n-Ce-Oq0" firstAttribute="top" secondItem="M9b-uU-POf" secondAttribute="top" constant="20" id="TQ8-jb-wdN"/>
+                            <constraint firstItem="Vuh-Wj-Kl7" firstAttribute="top" secondItem="X9n-Ce-Oq0" secondAttribute="bottom" constant="30" id="e6W-Pg-k00"/>
+                            <constraint firstItem="M9b-uU-POf" firstAttribute="trailing" secondItem="ScZ-nT-yTK" secondAttribute="trailing" constant="16" id="jZR-qg-8fh"/>
+                            <constraint firstItem="ScZ-nT-yTK" firstAttribute="leading" secondItem="M9b-uU-POf" secondAttribute="leading" constant="16" id="n7E-bZ-7mU"/>
+                            <constraint firstItem="0B9-rb-cyV" firstAttribute="top" secondItem="Vuh-Wj-Kl7" secondAttribute="bottom" constant="19.5" id="rHZ-LV-gAj"/>
+                            <constraint firstItem="X9n-Ce-Oq0" firstAttribute="trailing" secondItem="M9b-uU-POf" secondAttribute="trailing" id="sYK-Ws-DXx"/>
+                            <constraint firstItem="M9b-uU-POf" firstAttribute="trailing" secondItem="0B9-rb-cyV" secondAttribute="trailing" constant="16" id="zFE-v7-vNu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M9b-uU-POf"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailAddress" destination="0B9-rb-cyV" id="rHn-JG-U2t"/>
+                        <outlet property="detailMapView" destination="X9n-Ce-Oq0" id="l7u-bH-BLf"/>
+                        <outlet property="detailName" destination="Vuh-Wj-Kl7" id="2DF-nW-GW7"/>
+                        <outlet property="directionButton" destination="ScZ-nT-yTK" id="Kn8-cV-q34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yy7-KF-AZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2973.5999999999999" y="955.77211394302856"/>
+        </scene>
         <!--Restaurant-->
         <scene sceneID="OR9-uE-L7j">
             <objects>
@@ -553,7 +631,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xS7-za-pyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2974" y="954"/>
+            <point key="canvasLocation" x="3913" y="956"/>
         </scene>
         <!--Market-->
         <scene sceneID="Bbe-uI-ndI">

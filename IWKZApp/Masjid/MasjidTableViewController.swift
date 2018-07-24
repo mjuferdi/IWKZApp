@@ -29,6 +29,7 @@ class MasjidTableViewController: UITableViewController, CLLocationManagerDelegat
         navigationController?.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
         tableView.separatorStyle = .none
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     // Function to used by protocol for update table 
@@ -85,6 +86,17 @@ class MasjidTableViewController: UITableViewController, CLLocationManagerDelegat
         }
         
         return UITableViewCell()
+    }
+    
+    // Prepare segue for each detail selected row
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMasjid" {
+            let dvc = segue.destination as! DetailMasjidViewController
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                dvc.nameData = masjid.masjids[indexPath.row].name as String
+                dvc.addressData = masjid.masjids[indexPath.row].address as String
+            }
+        }
     }
 }
 

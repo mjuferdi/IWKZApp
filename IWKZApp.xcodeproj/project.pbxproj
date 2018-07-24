@@ -16,6 +16,8 @@
 		08C7C0E720EA7AE800586EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C7C0E520EA7AE800586EF8 /* LaunchScreen.storyboard */; };
 		08FD3B2C20F67AB8008E2A3F /* MasjidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FD3B2B20F67AB8008E2A3F /* MasjidService.swift */; };
 		08FD3B2E20F67D82008E2A3F /* MasjidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FD3B2D20F67D82008E2A3F /* MasjidTableViewController.swift */; };
+		08FFF5A6210790B500AF4F5B /* DetailMasjidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFF5A5210790B500AF4F5B /* DetailMasjidViewController.swift */; };
+		08FFF5A8210799A800AF4F5B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FFF5A7210799A800AF4F5B /* MapKit.framework */; };
 		12C0CA5E382D983FDFE6A111 /* Pods_IWKZApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		08C7C0E820EA7AE800586EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08FD3B2B20F67AB8008E2A3F /* MasjidService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidService.swift; sourceTree = "<group>"; };
 		08FD3B2D20F67D82008E2A3F /* MasjidTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidTableViewController.swift; sourceTree = "<group>"; };
+		08FFF5A5210790B500AF4F5B /* DetailMasjidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMasjidViewController.swift; sourceTree = "<group>"; };
+		08FFF5A7210799A800AF4F5B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IWKZApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FDBEC31EA63CB0380D40B6 /* Pods-IWKZApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWKZApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IWKZApp/Pods-IWKZApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FFF5A8210799A800AF4F5B /* MapKit.framework in Frameworks */,
 				12C0CA5E382D983FDFE6A111 /* Pods_IWKZApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +100,7 @@
 			children = (
 				08FD3B2B20F67AB8008E2A3F /* MasjidService.swift */,
 				08FD3B2D20F67D82008E2A3F /* MasjidTableViewController.swift */,
+				08FFF5A5210790B500AF4F5B /* DetailMasjidViewController.swift */,
 			);
 			path = Masjid;
 			sourceTree = "<group>";
@@ -111,6 +117,7 @@
 		8F2B088D992F72012FE53350 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08FFF5A7210799A800AF4F5B /* MapKit.framework */,
 				B58DE009F2081083BC7DD693 /* Pods_IWKZApp.framework */,
 			);
 			name = Frameworks;
@@ -150,6 +157,11 @@
 				TargetAttributes = {
 					08C7C0D820EA7AE600586EF8 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -236,6 +248,7 @@
 				08FD3B2C20F67AB8008E2A3F /* MasjidService.swift in Sources */,
 				08996F1220ED4BAE00A9468B /* JadwalSholatService.swift in Sources */,
 				08FD3B2E20F67D82008E2A3F /* MasjidTableViewController.swift in Sources */,
+				08FFF5A6210790B500AF4F5B /* DetailMasjidViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
