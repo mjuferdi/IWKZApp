@@ -50,6 +50,9 @@ class DetailMasjidViewController: UIViewController {
     }
     
     @IBAction func directionTapped(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/maps?daddr=\(latitude),\(longitude)")!, options: [:], completionHandler: nil)
+        
     }
     
     /*

@@ -32,14 +32,12 @@ class Masjid {
                     guard let name = json["name"] as? String,
                         let address = json["address"] as? String,
                         let distance = json["distance"] as? String,
-                    let coordinates = json["coordinates"] as? [Double]
-                    
+                        let coordinates = json["coordinates"] as? [Double]
+                        
                         else {return}
                     
                     for coordinate in coordinates {
                         self.coor.append(coordinate)
-
-                        //print(coordinate)
                     }
                     
                     let infos = InfoMasjid(name: name, address: address, distance: distance, coordinate: self.coor)
