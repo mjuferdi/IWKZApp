@@ -20,27 +20,36 @@ class Masjid {
     var delegate: UpdateDelegate?
     
     var masjids = [InfoMasjid]()
+    var coor = [Double]()
     
-
     func getMasjid(lat: String, lon: String) {
         Alamofire.request("https://api.mjuan.info/masjid/10/\(lat)/\(lon)").responseJSON { (response) in
-            //print(response)
+            print(response)
             self.masjids.removeAll()
             if let jsonArray = response.result.value as? [[String: Any]] {
                 for json in jsonArray {
+                    self.coor.removeAll()
                     guard let name = json["name"] as? String,
                         let address = json["address"] as? String,
-                        let distance = json["distance"] as? String
+                        let distance = json["distance"] as? String,
+                    let coordinates = json["coordinates"] as? [Double]
+                    
                         else {return}
                     
-                    let infos = InfoMasjid(name: name, address: address, distance: distance)
+                    for coordinate in coordinates {
+                        self.coor.append(coordinate)
+
+                        //print(coordinate)
+                    }
+                    
+                    let infos = InfoMasjid(name: name, address: address, distance: distance, coordinate: self.coor)
                     self.masjids.append(infos)
                 }
                 
                 self.delegate?.didUpdate(sender: self)
                 SVProgressHUD.dismiss()
-
-                //print(self.masjids.count)
+                print(self.masjids[0].coordinate)
+                print(self.masjids[0].name)
             }
             
         }
@@ -53,9 +62,11 @@ class InfoMasjid {
     var distance = ""
     var coordinate = [Double]()
     
-    init(name: String, address: String, distance: String) {
+    init(name: String, address: String, distance: String, coordinate: [Double]) {
         self.name = name
         self.address = address
         self.distance = distance
+        self.coordinate = coordinate
     }
+    
 }

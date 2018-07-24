@@ -22,9 +22,12 @@ class DetailMasjidViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         detailName.text = nameData
         detailAddress.text = addressData
+        
+        directionButton.layer.cornerRadius = 5
+
     }
 
     override func didReceiveMemoryWarning() {
