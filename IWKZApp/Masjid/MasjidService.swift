@@ -18,7 +18,6 @@ protocol UpdateDelegate {
 class Masjid {
     
     var delegate: UpdateDelegate?
-    
     var masjids = [InfoMasjid]()
     var coor = [Double]()
     
@@ -39,15 +38,12 @@ class Masjid {
                     for coordinate in coordinates {
                         self.coor.append(coordinate)
                     }
-                    
                     let infos = InfoMasjid(name: name, address: address, distance: distance, coordinate: self.coor)
                     self.masjids.append(infos)
                 }
-                
                 self.delegate?.didUpdate(sender: self)
                 SVProgressHUD.dismiss()
             }
-            
         }
     }
 }

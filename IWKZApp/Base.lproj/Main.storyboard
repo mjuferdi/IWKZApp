@@ -122,98 +122,106 @@
             </objects>
             <point key="canvasLocation" x="2036" y="134"/>
         </scene>
-        <!--Masjid Table View Controller-->
+        <!--Info Masjid-->
         <scene sceneID="xn3-3f-Dvd">
             <objects>
                 <tableViewController id="J5V-0V-Qwu" customClass="MasjidTableViewController" customModule="IWKZApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Df-Wy-p94">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="ghd-DU-4lm">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masjid Terdekat Disekitarmu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6lA-ao-N4z">
-                                    <rect key="frame" x="112.5" y="25" width="150" height="50"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="CfK-fA-Q2S"/>
-                                        <constraint firstAttribute="width" constant="150" id="jEe-4N-lkS"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" red="1" green="0.49411764705882355" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstItem="6lA-ao-N4z" firstAttribute="top" secondItem="ghd-DU-4lm" secondAttribute="top" constant="25" id="gKC-bi-HTe"/>
-                                <constraint firstItem="6lA-ao-N4z" firstAttribute="centerX" secondItem="ghd-DU-4lm" secondAttribute="centerX" id="mbp-aw-kCH"/>
-                            </constraints>
-                        </view>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="masjidCell" rowHeight="103" id="FoV-WT-zCa" customClass="MasjidCell" customModule="IWKZApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="375" height="103"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="masjidCell" rowHeight="120" id="FoV-WT-zCa" customClass="MasjidCell" customModule="IWKZApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FoV-WT-zCa" id="oLq-jm-oum">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masjid" translatesAutoresizingMaskIntoConstraints="NO" id="4Ah-s2-lcu">
-                                            <rect key="frame" x="0.0" y="5" width="92.5" height="92.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="4Ah-s2-lcu" secondAttribute="height" multiplier="1:1" id="NSe-8h-f40"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Islamisches Kultur- und Erziehungszentrum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zs0-EE-Y1R">
-                                            <rect key="frame" x="97.5" y="5" width="217.5" height="40"/>
+                                            <rect key="frame" x="15" y="5" width="345" height="51"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="gci-jK-UNL"/>
+                                                <constraint firstAttribute="height" constant="51" id="PQn-CR-kku"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.21 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d1z-2o-JPI">
-                                            <rect key="frame" x="97.5" y="76.5" width="272.5" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="zaY-na-TP7"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gitschiner Str. 17, 10969 Berlin, Germany" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-pZ-UTG">
-                                            <rect key="frame" x="97.5" y="46" width="272.5" height="30"/>
+                                            <rect key="frame" x="15" y="62" width="345" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="pmC-El-h2W"/>
+                                                <constraint firstAttribute="height" constant="20" id="sNq-tk-Old"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ko3-yh-oah">
+                                            <rect key="frame" x="15" y="90" width="345" height="25"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ac8-1X-zK6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="17" id="1lr-kM-a8F"/>
+                                                        <constraint firstAttribute="height" constant="17" id="CQF-gs-0Tv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.21 km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d1z-2o-JPI">
+                                                    <rect key="frame" x="22" y="0.0" width="84.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="get direction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2w-ut-LVC">
+                                                    <rect key="frame" x="257" y="0.0" width="88" height="21"/>
+                                                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="d1z-2o-JPI" firstAttribute="top" secondItem="Ko3-yh-oah" secondAttribute="top" id="1fM-dY-qmM"/>
+                                                <constraint firstItem="z2w-ut-LVC" firstAttribute="top" secondItem="Ko3-yh-oah" secondAttribute="top" id="9k3-QM-ste"/>
+                                                <constraint firstAttribute="bottom" secondItem="z2w-ut-LVC" secondAttribute="bottom" constant="4" id="9pQ-8Q-dKh"/>
+                                                <constraint firstAttribute="trailing" secondItem="z2w-ut-LVC" secondAttribute="trailing" id="Azq-mk-XOd"/>
+                                                <constraint firstAttribute="height" constant="25" id="Blf-EP-zco"/>
+                                                <constraint firstItem="z2w-ut-LVC" firstAttribute="height" secondItem="d1z-2o-JPI" secondAttribute="height" id="DnD-TW-D3H"/>
+                                                <constraint firstAttribute="bottom" secondItem="d1z-2o-JPI" secondAttribute="bottom" constant="4" id="Nu6-dT-NQS"/>
+                                                <constraint firstItem="z2w-ut-LVC" firstAttribute="leading" secondItem="d1z-2o-JPI" secondAttribute="trailing" constant="150.5" id="bJc-dE-ZF7"/>
+                                                <constraint firstItem="Ac8-1X-zK6" firstAttribute="leading" secondItem="Ko3-yh-oah" secondAttribute="leading" id="bOq-oo-a8u"/>
+                                                <constraint firstItem="Ac8-1X-zK6" firstAttribute="top" secondItem="Ko3-yh-oah" secondAttribute="top" id="euf-hJ-Bfh"/>
+                                                <constraint firstItem="d1z-2o-JPI" firstAttribute="leading" secondItem="Ac8-1X-zK6" secondAttribute="trailing" constant="5" id="jDx-53-nRC"/>
+                                                <constraint firstItem="z2w-ut-LVC" firstAttribute="width" secondItem="d1z-2o-JPI" secondAttribute="width" constant="3.5" id="tDT-Fp-606"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ac8-1X-zK6" secondAttribute="bottom" constant="8" id="tIy-Jr-3zU"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="4Ah-s2-lcu" firstAttribute="leading" secondItem="oLq-jm-oum" secondAttribute="leading" id="0wS-xW-mHM"/>
-                                        <constraint firstAttribute="trailing" secondItem="Skk-pZ-UTG" secondAttribute="trailing" constant="5" id="1qX-Sz-WgO"/>
-                                        <constraint firstItem="zs0-EE-Y1R" firstAttribute="top" secondItem="oLq-jm-oum" secondAttribute="top" constant="5" id="CPG-Gf-sZ6"/>
-                                        <constraint firstAttribute="bottom" secondItem="d1z-2o-JPI" secondAttribute="bottom" constant="5" id="FB9-U2-mAp"/>
-                                        <constraint firstItem="zs0-EE-Y1R" firstAttribute="leading" secondItem="4Ah-s2-lcu" secondAttribute="trailing" constant="5" id="Hoz-70-T53"/>
-                                        <constraint firstAttribute="trailing" secondItem="d1z-2o-JPI" secondAttribute="trailing" constant="5" id="JUd-R4-JHw"/>
-                                        <constraint firstItem="Skk-pZ-UTG" firstAttribute="top" secondItem="zs0-EE-Y1R" secondAttribute="bottom" constant="1" id="Mqv-W3-m45"/>
-                                        <constraint firstItem="d1z-2o-JPI" firstAttribute="top" secondItem="Skk-pZ-UTG" secondAttribute="bottom" constant="0.5" id="YGD-SI-dEU"/>
-                                        <constraint firstAttribute="bottom" secondItem="4Ah-s2-lcu" secondAttribute="bottom" constant="5" id="gC0-hj-9Rg"/>
-                                        <constraint firstItem="Skk-pZ-UTG" firstAttribute="leading" secondItem="4Ah-s2-lcu" secondAttribute="trailing" constant="5" id="kun-BD-cbR"/>
-                                        <constraint firstItem="4Ah-s2-lcu" firstAttribute="top" secondItem="oLq-jm-oum" secondAttribute="top" constant="5" id="rLx-Ej-0EK"/>
-                                        <constraint firstItem="d1z-2o-JPI" firstAttribute="leading" secondItem="4Ah-s2-lcu" secondAttribute="trailing" constant="5" id="sZc-Xb-nbW"/>
-                                        <constraint firstAttribute="trailing" secondItem="zs0-EE-Y1R" secondAttribute="trailing" constant="60" id="tAr-xB-bQE"/>
+                                        <constraint firstItem="Skk-pZ-UTG" firstAttribute="top" secondItem="zs0-EE-Y1R" secondAttribute="bottom" constant="6" id="68s-Mg-zIj"/>
+                                        <constraint firstItem="zs0-EE-Y1R" firstAttribute="leading" secondItem="oLq-jm-oum" secondAttribute="leading" constant="15" id="HWE-zn-0a3"/>
+                                        <constraint firstAttribute="trailing" secondItem="zs0-EE-Y1R" secondAttribute="trailing" constant="15" id="IZy-w0-Y38"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ko3-yh-oah" secondAttribute="trailing" constant="15" id="aPx-aG-uoq"/>
+                                        <constraint firstItem="zs0-EE-Y1R" firstAttribute="top" secondItem="oLq-jm-oum" secondAttribute="top" constant="5" id="iM9-oa-IEH"/>
+                                        <constraint firstAttribute="trailing" secondItem="Skk-pZ-UTG" secondAttribute="trailing" constant="15" id="ige-uy-HEk"/>
+                                        <constraint firstItem="Ko3-yh-oah" firstAttribute="leading" secondItem="oLq-jm-oum" secondAttribute="leading" constant="15" id="keg-u3-FCP"/>
+                                        <constraint firstItem="Ko3-yh-oah" firstAttribute="top" secondItem="Skk-pZ-UTG" secondAttribute="bottom" constant="8" id="s5P-Th-qA2"/>
+                                        <constraint firstItem="Skk-pZ-UTG" firstAttribute="leading" secondItem="oLq-jm-oum" secondAttribute="leading" constant="15" id="sNo-8B-nP6"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ko3-yh-oah" secondAttribute="bottom" constant="5" id="tif-ae-FCe"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="Skk-pZ-UTG" id="fBb-dF-fA6"/>
                                     <outlet property="distanceLabel" destination="d1z-2o-JPI" id="1Yu-ft-xCN"/>
                                     <outlet property="nameLabel" destination="zs0-EE-Y1R" id="CdU-GK-YN5"/>
-                                    <outlet property="previewImageView" destination="4Ah-s2-lcu" id="fW3-m5-ALo"/>
                                     <segue destination="dzE-qC-91s" kind="show" identifier="showMasjid" id="5CR-4U-YAI"/>
                                 </connections>
                             </tableViewCell>
@@ -223,11 +231,11 @@
                             <outlet property="delegate" destination="J5V-0V-Qwu" id="Tlo-8d-DbE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KVS-co-uZf"/>
+                    <navigationItem key="navigationItem" title="Info Masjid" id="KVS-co-uZf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kM-Ug-FwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982.5" y="955.5"/>
+            <point key="canvasLocation" x="1981.5999999999999" y="954.87256371814101"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fNv-cm-Ffw">
@@ -689,9 +697,9 @@
         <image name="jadwal4" width="64" height="64"/>
         <image name="jadwal5" width="64" height="64"/>
         <image name="logo" width="333" height="314"/>
-        <image name="masjid" width="256" height="256"/>
         <image name="mosque" width="30" height="30"/>
         <image name="next" width="16" height="16"/>
+        <image name="placeholder" width="24" height="24"/>
         <image name="shop" width="30" height="30"/>
         <image name="time" width="30" height="30"/>
     </resources>

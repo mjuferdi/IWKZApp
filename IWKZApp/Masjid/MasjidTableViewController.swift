@@ -12,6 +12,8 @@ import SVProgressHUD
 
 class MasjidTableViewController: UITableViewController, CLLocationManagerDelegate, UpdateDelegate {
     
+    
+    
     let locationManager = CLLocationManager()
     var latitude = ""
     var longitude = ""
@@ -26,10 +28,11 @@ class MasjidTableViewController: UITableViewController, CLLocationManagerDelegat
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        navigationController?.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        tableView.separatorStyle = .none
+        //tableView.separatorStyle = .none
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        
+        
     }
     
     // Function to used by protocol for update table 
@@ -73,6 +76,10 @@ class MasjidTableViewController: UITableViewController, CLLocationManagerDelegat
         return masjid.masjids.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -107,5 +114,6 @@ class MasjidCell : UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
-    
+    @IBOutlet weak var backgroundCardView: UIView!
+
 }
